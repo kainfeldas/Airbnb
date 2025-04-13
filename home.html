@@ -4,106 +4,149 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Airbnb Newsroom</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/Users/shanelynch/VS Code/Altcademy/News_AirBNB/Airnbn/styles.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <style>
+    .form-inline.expanded {
+      width: 100%;
+    }
+    .form-inline.expanded .search-input {
+      width: 100%;
+    }
+  </style>
 </head>
-<body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">
-      <img src="https://news.airbnb.com/wp-content/uploads/2020/09/Airbnb_Newsroom_Logo.svg" alt="Airbnb Newsroom" height="30">
-    </a>  
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Media Assets</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Product Releases</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
 
-  <!-- Hero Section -->
-  <div class="jumbotron jumbotron-fluid">
+<body> 
+    <header> 
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="https://img.icons8.com/ios-filled/50/FF5A5F/airbnb.png" alt="Airbnb Logo">
+                Newsroom
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/news">Product Releases</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Contact</a>
+                    </li>
+                </ul>
+                <div class="form-inline ml-auto">
+                    <div class="dropdown mr-2">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="languageDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="https://img.icons8.com/ios-filled/50/000000/globe.png" alt="Globe" class="globe-icon">
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="languageDropdown">
+                            <a class="dropdown-item" href="#">English</a>
+                            <a class="dropdown-item" href="#">Español</a>
+                            <a class="dropdown-item" href="#">Français</a>
+                            <a class="dropdown-item" href="#">Deutsch</a>
+                        </div>
+                    </div>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2 search-input" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    <header>
+<main>  
+      <!-- Hero Section -->
+<section class="hero-section py-5">
     <div class="container">
-      <h1 class="display-4">Welcome to the Airbnb Newsroom</h1>
-      <p class="lead">Stay updated with the latest news and updates from Airbnb.</p>
-      <hr class="my-4" style="border-color: white;">
-      <p>Explore our latest articles and press releases.</p>
-      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        <div class="row align-items-center">
+            <div class="col-md-6 hero-content">
+                <h1 class="display-4">Nature nomads chase Earth’s natural wonders this spring</h1>
+                <p class="lead">March 31, 2025</p>
+                <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+            <div class="col-md-6 hero-image" style="background-image: url('https://news.airbnb.com/wp-content/uploads/sites/4/2025/03/Bungaree-Australia_Red-Rock-Hut-King-Island-.jpeg?zoom=3&resize=1100%2C725');">
+            </div>
+        </div>
     </div>
-  </div>
+</section>
+    <!-- Articles Section -->
+    <section class="articles-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card mb-4">
+                        <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2021/09/20160720_Business_Jen_Portland_Elliott_1048.jpg?resize=2000%2C1340" class="card-img-top" alt="Article Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Airbnb has generated $13.5B in tourism taxes for communities around the world</h5>
+                            <p class="card-text">April 9, 2025</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card mb-4">
+                        <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2025/03/Virginia_Train-Caboose_-All-Belong-Co.jpeg?resize=2000%2C1340" class="card-img-top" alt="Article Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Revealing the most wishlisted homes across the 50 states</h5>
+                            <p class="card-text">March 27, 2025</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card mb-4">
+                        <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2025/03/Static-StaycaySocial_US_ENG_SOC_FB-In-Feed-IG-In-Feed_1x1.jpg?resize=2000%2C1340" class="card-img-top" alt="Article Image">
+                        <div class="card-body">
+                            <h5 class="card-title">HotelTonight launches new perk: Earn Airbnb credit with every hotel stay</h5>
+                            <p class="card-text">March 26, 2025</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card mb-4">
+                        <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2025/03/2025_ATLANTA-AirbnbAcademy_064.jpg?resize=2000%2C1340" class="card-img-top" alt="Article Image 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Airbnb and AMB Sports and Entertainment partner to drive economic growth during major events in Atlanta</h5>
+                            <p class="card-text">March 18, 2025</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2025 Airbnb, Inc. All rights reserved.</p>
+</footer>
 
-  <!-- News Articles Section -->
-  <div class="container mt-4">
-    <div class="row">
-      <div class="col-md-4">
-        <div class="card mb-4">
-          <img src="https://news.airbnb.com/wp-content/uploads/2023/02/airbnb-newsroom-article-1.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">2025 Spring Travel Trends</h5>
-            <p class="card-text">Travelers embrace soft, slow travel.</p>
-            <a href="#" class="btn btn-primary">Read more</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card mb-4">
-          <img src="https://news.airbnb.com/wp-content/uploads/2023/02/airbnb-newsroom-article-2.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Community Fund Donations</h5>
-            <p class="card-text">Airbnb donates over $8.5 million to nonprofits globally.</p>
-            <a href="#" class="btn btn-primary">Read more</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card mb-4">
-          <img src="https://news.airbnb.com/wp-content/uploads/2023/02/airbnb-newsroom-article-3.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Quality Commitment</h5>
-            <p class="card-text">Our commitment to providing the highest quality stays.</p>
-            <a href="#" class="btn btn-primary">Read more</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-3">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <p>&copy; 2025 Airbnb Newsroom</p>
-        </div>
-        <div class="col-md-6">
-          <ul class="list-inline">
-            <li class="list-inline-item"><a href="#" class="text-white">Privacy</a></li>
-            <li class="list-inline-item"><a href="#" class="text-white">Terms</a></li>
-            <li class="list-inline-item"><a href="#" class="text-white">Sitemap</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const searchInput = document.querySelector('.search-input');
+        const formInline = document.querySelector('.form-inline');
+    
+        searchInput.addEventListener('focus', function() {
+            formInline.classList.add('expanded');
+        });
+    
+        searchInput.addEventListener('blur', function() {
+            if (!searchInput.value) {
+                formInline.classList.remove('expanded');
+            }
+        });
+    });
+</script>
 </body>
 </html>
