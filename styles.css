@@ -1,67 +1,163 @@
-/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-/* Navbar */
 .navbar {
-    background-color: #ffffff;
-    border-bottom: 1px solid #e0e0e0;
-  }
-  .navbar-brand img {
-    height: 40px;
-  }
-  .navbar-nav .nav-link {
-    color: #333333;
-    font-weight: 500;
-  }
-  .navbar-nav .nav-link:hover {
-    color: #ff5a5f;
-  }
-  
-  /* Hero Section */
-  .jumbotron {
-    background-image: url('https://news.airbnb.com/wp-content/uploads/2020/09/airbnb-newsroom-hero.jpg');
+    background-color: #FF5A5F;
+    padding: 10px 20px;
+}
+
+.navbar-brand {
+    color: white;
+    font-weight: bold;
+    margin-right: 30px; 
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    margin-right: 20px; 
+}
+
+.navbar-nav .nav-link:hover {
+    color: #FFB6C1;
+}
+
+.form-inline .search-input {
+    border-radius: 20px;
+    padding: 5px 15px;
+    transition: width 0.4s ease-in-out;
+    width: 0;
+    opacity: 0;
+}
+
+.form-inline .btn {
+    border-radius: 20px;
+    background-color: white;
+    color: #FF5A5F;
+    border: 1px solid #FF5A5F;
+    transition: width 0.4s ease-in-out;
+}
+
+.form-inline .btn:hover {
+    background-color: #FFB6C1;
+    color: white;
+}
+
+.form-inline.expanded .search-input {
+    width: 300px;
+    opacity: 1;
+}
+
+.dropdown .btn-secondary {
+    background-color: #FF5A5F;
+    border: none;
+    color: white;
+}
+
+.dropdown .btn-secondary:hover {
+    background-color: #FFB6C1;
+}
+
+.dropdown-menu {
+    background-color: white;
+    border: 1px solid #FF5A5F;
+}
+
+.dropdown-item {
+    color: #FF5A5F;
+}
+
+.dropdown-item:hover {
+    background-color: #FFB6C1;
+    color: white;
+}
+
+.hero-section {
+    background-color: white;
+    color: black;
+    padding: 60px 0;
+    position: relative;
+    text-align: center; /* Center the text */
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the content vertically */
+    align-items: flex-start; /* Align the content to the start horizontally */
+    height: 100%;
+    text-align: left; /* Align text to the left */
+}
+
+.hero-content h1 {
+    font-size: 1.5rem; /* Adjusted font size */
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    font-size: 1rem; /* Adjusted font size */
+    line-height: 1.5;
+}
+
+.hero-image {
     background-size: cover;
     background-position: center;
-    color: white;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
-  }
-  .jumbotron .btn-primary {
-    background-color: #ff5a5f;
-    border-color: #ff5a5f;
-  }
-  .jumbotron .btn-primary:hover {
-    background-color: #e04a4e;
-    border-color: #e04a4e;
-  }
-  
-  /* News Articles Section */
-  .card {
+    height: 400px;
+    border-radius: 15px; /* Add this line to round the corners */
+    position: relative;
+}
+
+.articles-section {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+.articles-section .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.articles-section .card {
     border: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.articles-section .card:hover {
+    transform: translateY(-10px);
+}
+
+.articles-section .card-title {
+    color: #FF5A5F;
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* New CSS lines */
+.form-inline.expanded {
+    width: 100%;
+}
+
+.form-inline.expanded .search-input {
+    width: 100%;
+}
+.globe-icon {
+    width: 20px;
+    height: 20px;
   }
-  .card-title {
-    font-size: 1.25rem;
-    font-weight: 700;
-  }
-  .card-text {
-    color: #666666;
-  }
-  .card .btn-primary {
-    background-color: #ff5a5f;
-    border-color: #ff5a5f;
-  }
-  .card .btn-primary:hover {
-    background-color: #e04a4e;
-    border-color: #e04a4e;
-  }
-  
-  /* Footer */
-  footer {
-    background-color: #333333;
-    color: white;
-  }
-  footer a {
-    color: #ff5a5f;
-  }
-  footer a:hover {
-    color: #e04a4e;
+  .navbar-brand img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
   }
